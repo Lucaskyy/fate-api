@@ -7,7 +7,6 @@ This is a temporary solution till the Developer of FateUHC has finished their AP
 You may find more detailed examples [here.](https://github.com/Lucaskyy/fate-api/tree/main/src/main/java/xyz/sculas/fateapi/example)
 
 Import the FateAPI into your Maven project, [click here](https://github.com/Lucaskyy/fate-api/packages/557870) to get the latest version.
-```
 
 Create a scenario and register it:
 ```java
