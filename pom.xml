@@ -84,7 +84,8 @@
             <artifactId>..</artifactId>
             <version>..</version>
             <scope>system</scope>
-            <systemPath>C:/Users/lucas/Downloads/FateUHCRelease.jar</systemPath>
+            <systemPath>F:/FateUHCRelease.jar</systemPath>
+            <!-- You can ignore this. -->
         </dependency>
     </dependencies>
 
