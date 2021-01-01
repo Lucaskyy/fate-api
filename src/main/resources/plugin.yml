@@ -1,0 +1,8 @@
+name: FateAPImain
+version: ${project.version}
+main: xyz.sculas.fateapi.FateAPImain
+prefix: FateAPImain
+depend: [FateUHC]
+authors: [Sculas]
+description: A Scenario API for FateUHC.
+website: https://sculas.xyz/
