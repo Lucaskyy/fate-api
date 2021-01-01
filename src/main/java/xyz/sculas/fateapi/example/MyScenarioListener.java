@@ -14,7 +14,7 @@ public class MyScenarioListener extends ScenarioListener {
 
     @EventHandler
     public void onMove(PlayerMoveEvent event) {
-        //TODO: This only runs when the scenario is active!
+        // This only runs when the scenario is active!
         event.getPlayer().sendMessage("You moved!");
     }
 
