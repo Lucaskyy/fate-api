@@ -6,6 +6,15 @@ This is a temporary solution till the Developer of FateUHC has finished their AP
 ## Usage
 You may find more detailed examples [here.](https://github.com/Lucaskyy/fate-api/tree/main/src/main/java/xyz/sculas/fateapi/example)
 
+Import the FateAPI into your Maven project:
+```xml
+<dependency>
+  <groupId>xyz.sculas</groupId>
+  <artifactId>fateapi</artifactId>
+  <version>latest</version>
+</dependency>
+```
+
 Create a scenario and register it:
 ```java
 public class MyScenario {

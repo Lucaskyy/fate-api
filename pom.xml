@@ -6,7 +6,7 @@
 
     <groupId>xyz.sculas</groupId>
     <artifactId>fateapi</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>latest</version>
     <packaging>jar</packaging>
 
     <name>FateAPI</name>
@@ -53,6 +53,14 @@
             </resource>
         </resources>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Lucaskyy Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/Lucaskyy/fate-api</url>
+        </repository>
+    </distributionManagement>
 
     <repositories>
         <repository>
