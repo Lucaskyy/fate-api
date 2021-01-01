@@ -112,7 +112,7 @@ public class ScenarioManager {
      * <b>This is only used internally and should not be used externally.</b>
      * @param scenario the scenario a listener has been mapped to
      */
-    public void unregister(@NonNull Scenario scenario) {
+    private void unregister(@NonNull Scenario scenario) {
         listeners.remove(scenario);
         HandlerList.unregisterAll(getListener(scenario));
         scenario.setActive(false);
@@ -142,7 +142,10 @@ public class ScenarioManager {
      * Disposes all listeners.
      */
     public void dispose() {
-        listeners.forEach((__, l) -> HandlerList.unregisterAll(l));
+        listeners.forEach((s, l) -> {
+            remove(s);
+            HandlerList.unregisterAll(l);
+        });
         listeners.clear();
     }
 
