@@ -9,7 +9,7 @@ public class FateAPI {
     private @Getter final ScenarioManager scenarioManager;
 
     /**
-     * Creates a FateAPI object you can use in your addons.
+     * Creates a FateAPI object you can use in your extensions.
      * @param fateInstance instance you can grab from {@link UHC#getInstance()}
      * @see UHC#getInstance()
      */
