@@ -16,7 +16,9 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 public class ScenarioManager {
 
@@ -142,10 +144,10 @@ public class ScenarioManager {
      * Disposes all listeners.
      */
     public void dispose() {
-        listeners.forEach((s, l) -> {
-            remove(s);
-            HandlerList.unregisterAll(l);
-        });
+        for (Map.Entry<Scenario, ScenarioListener> s : listeners.entrySet()) {
+            remove(s.getKey());
+            HandlerList.unregisterAll(s.getValue());
+        }
         listeners.clear();
     }
 
