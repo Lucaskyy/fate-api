@@ -7,7 +7,7 @@ import xyz.sculas.fateapi.FateAPI;
 
 public class MyScenario {
 
-    public void run() {
+    public void onEnable() {
         FateAPI fateAPI = new FateAPI(UHC.getInstance());
         Scenario scenario = fateAPI.getScenarioManager().create(
                 "My Scenario!",
