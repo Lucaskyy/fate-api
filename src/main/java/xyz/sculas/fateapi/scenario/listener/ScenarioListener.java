@@ -30,7 +30,7 @@ public class ScenarioListener implements Listener {
     }
 
     public boolean isGameRunning() {
-        return scenarioManager.raw().getPlugin().getGameManager().getGameState() != GameState.values()[0];
+        return scenarioManager.raw().getPlugin().getGameManager().getGameState() == GameState.values()[2];
     }
 
 }

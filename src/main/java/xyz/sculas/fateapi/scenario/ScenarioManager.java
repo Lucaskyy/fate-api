@@ -144,8 +144,9 @@ public class ScenarioManager {
      * Disposes all listeners.
      */
     public void dispose() {
-        //TODO: fix this
-        for (Map.Entry<Scenario, ScenarioListener> s : listeners.entrySet()) {
+        Iterator<Map.Entry<Scenario, ScenarioListener>> iter = listeners.entrySet().iterator();
+        while (iter.hasNext()) {
+            Map.Entry<Scenario, ScenarioListener> s = iter.next();
             remove(s.getKey());
             HandlerList.unregisterAll(s.getValue());
         }
